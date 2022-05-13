@@ -22,6 +22,8 @@ Encore
      */
     .addEntry('app', './assets/app.js')
 
+    .addEntry('index','./assets/javascript/index.js')
+
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 
@@ -70,6 +72,11 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+    .copyFiles({
+        from: './assets/images/',
+        to: 'images/[path][name].[ext]',
+        pattern: /.(png|jpg|jpeg|gif|svg)/,
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();

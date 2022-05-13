@@ -1,0 +1,36 @@
+:root{
+    /* Colors */
+    --body-color: #fff;
+    --titles-color: #000000;
+    --hover-violet: #BF6DE0;
+    --dark-color: #11101D;
+    --hover-red: #E06D6D;
+    --hover-green: #6DE071;
+    --margin-hover: #FF983F;
+    --text-color-icons: #707070;
+    --primary-color-light: #f6f5ff;
+
+    /* transition */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5ss ease;
+
+
+    /* border rad */
+    --border-radius-btn: 4px;
+
+    /* icons size */
+    --icon-size-btn: 19px
+}
+
+body.dark{
+    --body-color: #11101D;
+    --titles-color: #fff;
+    --hover-violet: #BF6DE0;
+    --hover-red: #E06D6D;
+    --hover-green: #6DE071;
+    --margin-hover: #FF983F;
+    --text-color-icons: #eeeeee;
+    --primary-color-light: #11101D;
+}

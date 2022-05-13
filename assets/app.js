@@ -8,5 +8,13 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
 
+
+// Compile new Javascript file
+import './javascript/index.js';
+
 // start the Stimulus application
 import './bootstrap';
+
+// font awesome file
+import './fontawesome/css/all.css';
+
