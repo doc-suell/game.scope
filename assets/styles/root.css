@@ -3,12 +3,14 @@
     --body-color: #fff;
     --titles-color: #000000;
     --hover-violet: #BF6DE0;
+    --hover-light-violet: #c289de;
     --dark-color: #11101D;
     --hover-red: #E06D6D;
     --hover-green: #6DE071;
     --margin-hover: #FF983F;
     --text-color-icons: #707070;
     --primary-color-light: #f6f5ff;
+    --borders: rgba(112, 112, 112, .3);
 
     /* transition */
     --tran-02: all 0.2s ease;
@@ -19,18 +21,19 @@
 
     /* border rad */
     --border-radius-btn: 4px;
+    --border-radius-img: 10px;
 
     /* icons size */
     --icon-size-btn: 19px
 }
 
-body.dark{
-    --body-color: #11101D;
-    --titles-color: #fff;
-    --hover-violet: #BF6DE0;
-    --hover-red: #E06D6D;
-    --hover-green: #6DE071;
-    --margin-hover: #FF983F;
-    --text-color-icons: #eeeeee;
-    --primary-color-light: #11101D;
-}
+/*body.dark{*/
+/*    --body-color: #11101D;*/
+/*    --titles-color: #fff;*/
+/*    --hover-violet: #BF6DE0;*/
+/*    --hover-red: #E06D6D;*/
+/*    --hover-green: #6DE071;*/
+/*    --margin-hover: #FF983F;*/
+/*    --text-color-icons: #eeeeee;*/
+/*    --primary-color-light: #11101D;*/
+/*}*/
