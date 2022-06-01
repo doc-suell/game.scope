@@ -6,9 +6,10 @@
     </div>
     <div><img src="{{ asset('build/images/logo_v2_white_transparent.png') }}" alt="game-scope_logo"></div>
     {% if app.user %}
-    <div><a id="login-btn-" class="logout-btn log-btn" href="{{ path('app_logout') }}"><i class="fa-regular fa-arrow-right-to-bracket login"></i>Logout</a></div>
+
+    <div><a id="login-btn-" class="logout-btn log-btn" href="{{ path('app_logout') }}"><i class="fa-solid fa-arrow-right-from-bracket login"></i>{{ app.user.nickname }}</a></div>
     {% else %}
-        <div><a id="login-btn-" class="log-btn login-btn" href="{{ path('app_login')}}"><i class="fa-regular fa-arrow-right-to-bracket login"></i>Login</a></div>
+        <div><a id="login-btn-" class="log-btn login-btn" href="{{ path('app_login')}}">Access all features</a></div>
     {% endif %}
 
 </div>
@@ -41,38 +42,17 @@
                     <span class="text nav-text">FAQ</span>
                 </a>
             </li>
+            <li class="nav-link">
+                <a href="#"
+                ><i class="icon dashboard-icon fa-regular fa-table-cells-large"></i>
+                    <span class="text nav-text">Dashboard</span>
+                </a>
+            </li>
         </ul>
         </div>
-        {#
-        <div class="mode">
-            <div class="moon-sun">
-                <i class="fa-solid fa-moon moon"></i>
-                <i class="fa-solid fa-sun sun"></i>
-                <div class="switch-flex">
-                <span class="mode-text text">Dark Mode</span>
-                <span class="toggle-switch">
-                    <span class="switch"></span>
-                </span>
-                </div>
-            </div>
-        </div>
-        #}
     </div>
 </div>
     <div id="btn-back-to-top"><i class="fa-solid fa-xl fa-angle-up btn-back-to-top"></i></div>
 </nav>
-<div class="login-modal" id="login-modal">
-    <h2>Sign in to Game.scope</h2>
-    <form class="login-form" action="" id="login-form" method="post">
-        <i class="fa-solid fa-envelope"></i>
-        <input id="email" name="email" type="text" placeholder="Email">
-        <i class="fa-solid fa-lock password-icon"></i>
-        <input id="password" name="password" type="text" placeholder="Password">
-        <span>Or</span>
-        <a id="btn-to-creataccount" href="{{ path('app_creataccount') }}">Creat account</a>
-        <p>I accept  the  conditions  of  use <br> and  privacy  policy </p>
-        <button class=" login-btn-modal " type="submit">Login</button>
-        <div><i class="fa-solid fa-xmark exit-icon"></i></div>
-    </form>
-</div>
+
 

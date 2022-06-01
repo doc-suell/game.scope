@@ -22,7 +22,7 @@ class ArticleSearchForm extends AbstractType
             ->add('title', TextType::class, [
                 'attr' => [
                     'placeholder' => 'Search',
-                    'class' => 'input-class'
+                    'class' => 'search-input'
                 ],
                 'label' => false,
                 'required' => false

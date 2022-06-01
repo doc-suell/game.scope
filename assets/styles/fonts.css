@@ -12,3 +12,13 @@
     font-family: 'roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'newsreader';
+    src: url("../fonts/Newsreader-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: robot-mono;
+    src: url("../fonts/RobotoMono-Regular.ttf") format('truetype');
+}
