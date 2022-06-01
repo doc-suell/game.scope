@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Form\Form;
+namespace App\Form;
+
 
 use App\Entity\ArticleKind;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
