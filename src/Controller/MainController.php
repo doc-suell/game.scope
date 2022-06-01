@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Main;
 use App\Form\ArticleSearchForm;
-use App\Form\Form\ArticlesType;
+use App\Form\ArticlesType;
 use App\Repository\MainRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
