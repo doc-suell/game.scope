@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="input-main">
+        <div class="">{{ form(searchForm) }}</div>
+    </div>
+
+    <div class="crud-section-btn">
+        <div><a  role="button" class="btn btn-primary add-btn" href="{{ path('articles_new') }}">Add article</a></div>
+    </div>
+    <section class="main-section">
+    {% for article in articles %}
+            <div class="cards">
+                <img src="{{ vich_uploader_asset(article, 'coverImageFile') }}" alt="">
+                <div class="date">Posted {{ article.posted|date('d-m-Y') }} by <span>{{ article.author }}</div>
+                <h2>{{ article.title|u.truncate(50, '...', false)|raw }}</h2>
+{#                <p>Article by : {{article.author}}</p>#}
+{#                <p> tage : {{ article.kind }} </p>#}
+                <div class="btn-explore">
+{#                    article.id and article.title its mean what i wana see in the url i can put more parameters but i just kept 2#}
+                    <a class="btn-explore-link" href="{{ path('articles_detail', {id: article.id, title: article.title}) }}">Explore</a>
+                </div>
+            </div>
+    {% endfor %}
+    </section>
+{% endblock %}
