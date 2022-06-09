@@ -2,10 +2,12 @@
 
 {% block body %}
     <article class="single-article">
-        <div  class="mb-5">
+        {% if is_granted('ROLE_ADMIN') %}
+        <div>
             <a   role="button" class="btn btn-primary " href="{{ path('article_edit', {id: articles.id,}) }}">Edit article</a>
             <a  role="button" class="btn btn-danger " href="{{ path('article_delete', {id: articles.id,}) }}">Delete article</a>
         </div>
+        {% endif %}
         <h1>{{ articles.title }}</h1>
         <div class="date">Posted {{ articles.posted|date('d-m-Y') }} by <span>{{ articles.author }}</span></div>
         <img src="{{ vich_uploader_asset(articles, 'coverImageFile') }}" alt="">

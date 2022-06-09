@@ -104,12 +104,12 @@ body{
 /* ------------------------------------ LOGIN FORM ------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 
-.login-form{
+.login-form, .register-form{
     width: 60%;
     margin: 100px auto;
     font-family: robot-mono;
     font-weight: 500;
-    /*border: 1px solid black;*/
+    border: 1px solid red;
 }
 
 .login-elements{
@@ -169,13 +169,6 @@ body{
 /* ------------------------------------ REGISTER FORM ------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 
-.register-form{
-    width: 60%;
-    margin: 100px auto;
-    font-family: robot-mono;
-    font-weight: 500;
-    border: 1px solid black;
-}
 
 
 

@@ -5,9 +5,12 @@
         <div class="">{{ form(searchForm) }}</div>
     </div>
 
+    {% if is_granted('ROLE_ADMIN') %}
     <div class="crud-section-btn">
         <div><a  role="button" class="btn btn-primary add-btn" href="{{ path('articles_new') }}">Add article</a></div>
     </div>
+    {% endif %}
+
     <section class="main-section">
     {% for article in articles %}
             <div class="cards">

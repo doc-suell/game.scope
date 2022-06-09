@@ -46,6 +46,7 @@ class MainController extends AbstractController
     // request like POST
     public function articlesNew(Request $request, EntityManagerInterface $entityManager)
     {
+
         $this->denyAccessUnlessGranted('ROLE_ADMIN');
         // Main its name of the class in Entity/Main.php or the name of the table
         $article = new Main();
